@@ -1,74 +1,37 @@
+package javaproject;
 
 public class Counter {
 
-	public static void main(String[] args) {
+	int value;
+	public void click() {
 		// TODO Auto-generated method stub
-Counter Venue=new Counter();
-int rValue=Venue.getValue();
-Venue.unclick();
-Venue.unclick();
-rValue=Venue.getValue();
-{
-   rValue = rValue + 10;
-}
-
-{
-	   rValue = rValue-5;
-}
-System.out.println("Expected: 5");
-System.out.println("Actual:" +rValue);
-
-{
-    rValue = 0;
- }
-{
-	rValue=rValue+3;
-}
-{
-	rValue=rValue-4;
-	
-}
-System.out.println("Expected: -1");
-System.out.println("Actual:" +rValue);
-	
-	
-	 
-	   
-	
-	{
-	
-	}
-	
-
-	
-}
-
-
-
-
-	
-
-
-	private void unclick() {
-		// TODO Auto-generated method stub
-		
-	}
-	private void click() {
-		// TODO Auto-generated method stub
-		
+		value=value+1;
 	}
 
-	private int getValue() {
+	public void unclick() {
 		// TODO Auto-generated method stub
-		return 0;
-		
-	
-	
-	
+		value=value-1;
+	}
+
+	public int getValue() {
+		// TODO Auto-generated method stub
+		return value;
 	
 	}
 
-	
-	
-	
+	public void reset() {
+		// TODO Auto-generated method stub
+		value=0;
+	}
+
+	public void clickMany(int clickMany) {
+		// TODO Auto-generated method stub
+		value=value+clickMany;
+	}
+
+	public void unclickMany(int unclickMany) {
+		// TODO Auto-generated method stub
+		value=value-unclickMany;
+	}
+
 }
